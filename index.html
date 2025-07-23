@@ -37,6 +37,37 @@
             flex-direction: column;
         }
 
+/* --- Bagian Keahlian --- */
+#skills {
+    justify-content: flex-start;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 1000px;
+    padding: 1rem;
+}
+
+.skill-item {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    color: var(--accent-color);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.2);
+}
+
+
         /* --- Navigasi --- */
         nav {
             position: fixed;
@@ -351,6 +382,7 @@
     <nav id="main-nav">
         <div class="nav-links">
             <a href="#home" class="nav-link active">Beranda</a>
+            <a href="#skills" class="nav-link">Keahlian</a>
             <a href="#work" class="nav-link">Proyek</a>
             <a href="#about" class="nav-link">Tentang</a>
             <!-- Ganti '#' dengan URL profil LinkedIn Anda -->
@@ -383,6 +415,25 @@
                 </div>
             </div>
         </section>
+
+<!-- Bagian Skills -->
+<section id="skills" class="page">
+    <h2 class="page-title">Keahlian</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>HTML & CSS</h3>
+            <p>Mahir dalam membangun struktur halaman web semantik dan tata letak responsif.</p>
+        </div>
+        <div class="project-card">
+            <h3>JavaScript</h3>
+            <p>Mampu membangun interaktivitas dan SPA dasar menggunakan vanilla JS.</p>
+        </div>
+        <div class="project-card">
+            <h3>UI Design</h3>
+            <p>Memiliki pemahaman tentang prinsip UI modern, konsistensi, dan warna.</p>
+        </div>
+    </div>
+</section>
 
         <!-- Bagian Proyek -->
         <section id="work" class="page">
